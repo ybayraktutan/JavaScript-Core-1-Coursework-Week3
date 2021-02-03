@@ -9,7 +9,7 @@
 let pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
 function filteredArray(arr) {
-  return arr !== null && arr.length ===2;
+  return arr !== null && arr.length === 2;
 }
 let pairsByIndex = pairsByIndexRaw.filter(filteredArray); // Complete this statement
 

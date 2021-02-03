@@ -24,6 +24,10 @@ arr.forEach(multiplesOf);
 
 
 
+```
+
+
+
 /* EXPECTED OUTPUT */
 
 /*
