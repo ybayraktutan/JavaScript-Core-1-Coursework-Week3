@@ -20,7 +20,7 @@ var names = [
 ];
 
 function findLongNameThatStartsWithA(name){
-  return names.find(name => name.charAt(0) ==="A" && name.length > 7);
+  return names.find(name => name[0] ==="A" && name.length > 7);
 }
 
 

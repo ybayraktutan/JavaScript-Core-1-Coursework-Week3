@@ -17,6 +17,8 @@
  Hint: search for string methods like Includes and IndexOf.
 */
 
+const { get } = require("http");
+
 function checkCodeIsThere(stringText) {
   let magicWord = "code";
   //edit code below
@@ -132,11 +134,28 @@ function getLocationName(array) {
    
   Advanced challange: try to use arrow function when invoking an array method.
 */
-function journeyPlanner(locations, transportMode) {
+
+
+function journeyPlanner(locations, transportMode){
   // Implement the function body
-  let isAccessibleByTransportMode
+  let locationsNames = locations.filter(location => location.includes(transportMode)).map(location => location[0]);
+  return locationsNames;
+  
+ }
+
+
+/* First Solution
+function journeyPlanner(locations, transportMode){
+ let locationsNames = [];
+  locations.map((location) => {
+    if (isAccessibleByTransportMode(locations, transportMode)) {
+      locationsName.push(getLocationName(location));
+    }
+  });
+  return locationsNames;
 }
 
+*/
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const string1 = "I Love coding and perfect code makes me happy";
