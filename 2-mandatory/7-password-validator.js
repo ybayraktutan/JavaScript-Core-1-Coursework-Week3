@@ -26,6 +26,21 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 function validatePasswords(passwords) {
     
+    return passwords.map((password, item) => {
+        return (passwords.indexOf(password) === item &&
+                containLeast5Character(password) && 
+                containsLowercaseLetter(password) && 
+                containsUppercaseLetter(password) && 
+                containsNumber(password) && 
+                containsSymbol(password) 
+            )
+    })
+}
+
+
+// Returns true if string contains at least 5 characters..
+function containLeast5Character(string){
+    return string.length >=5;
 }
 
 // Returns true if string contains at least one uppercase letter.
