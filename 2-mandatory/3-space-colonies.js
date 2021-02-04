@@ -14,8 +14,16 @@
         Logic: Only strings that start with A, and finish with family
   
 */
+function isStartWithAAndFamily(voyager){
+  return voyager[0] ==="A" && voyager.includes("family");
 
-function colonisers() {}
+}
+
+function colonisers(voyagers) {
+  return voyagers.filter(isStartWithAAndFamily);
+} 
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -20,8 +20,21 @@
   
   Let's first look at an example that will teach you how to use these methods.
 */
+function isPink(index) {
+  return index === "pink";
+} 
 
-function bushChecker() {}
+function bushChecker(berryBush) {
+  if (berryBush.every(isPink)) {
+    return "Bush is safe to eat from";
+} else {
+    return "Toxic! Leave bush alone!";
+}
+}
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

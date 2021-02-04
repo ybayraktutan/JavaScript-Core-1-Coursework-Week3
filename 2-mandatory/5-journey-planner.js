@@ -20,12 +20,14 @@
 function checkCodeIsThere(stringText) {
   let magicWord = "code";
   //edit code below
-  if (stringText) {
-    return stringText;
+  if (stringText.includes(magicWord)) {
+    return stringText.indexOf(magicWord);
   } else {
     return "Not found";
   }
 }
+
+ 
 
 /*
   I am new to London and would like to know what transport I can take to different famous locations.
@@ -64,7 +66,10 @@ function checkCodeIsThere(stringText) {
   
   Hint: Use the corresponding array method to split the array.
 */
-function getTransportModes() {}
+function getTransportModes(array) {
+ return array.slice(1);
+
+}
 
 /*
   Implement the function isAccessibleByTransportMode that
@@ -81,7 +86,11 @@ function getTransportModes() {}
     
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
-function isAccessibleByTransportMode() {}
+function isAccessibleByTransportMode(array, string) {
+  return array.includes(string);
+}
+
+
 
 /*
   Implement the function getLocationName that
@@ -92,7 +101,9 @@ function isAccessibleByTransportMode() {}
    - Returns the name of the location
       e.g: "Tower Bridge"
 */
-function getLocationName() {}
+function getLocationName(array) {
+  return array[0];
+}
 
 /*
  We arrived at the final method. it won't take long if you use the previously implemented functions wisely.
@@ -123,6 +134,7 @@ function getLocationName() {}
 */
 function journeyPlanner(locations, transportMode) {
   // Implement the function body
+  let isAccessibleByTransportMode
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

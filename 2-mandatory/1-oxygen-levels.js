@@ -9,9 +9,16 @@
     Write a function that finds the oxygen level of the first safe planet - Oxygen between 19.5% and 23.5%
 
     Some string methods that might help you here are .replace() and .substring(). 
+
 */
 
-function safeLevels() {}
+
+function safeLevels(array) {
+  let oxygenLevels = array.map(element => element.replace("%", ""));
+  let findFirstSafeLevel = oxygenLevels.find(oxygenLevel => oxygenLevel > 19.5 && oxygenLevel < 23.5);
+  return findFirstSafeLevel + "%";
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
